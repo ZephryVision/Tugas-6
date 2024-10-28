@@ -1,0 +1,104 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Profile Picture */
+img.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+/* Contact Link */
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Summary Section */
+.summary {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* Button styling */
+.buttons, .back-button {
+    margin-top: 20px;
+}
+
+.animated-button, .back-button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    text-decoration: none;
+}
+
+.animated-button:hover, .back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Section visibility control */
+input[type="radio"] {
+    display: none;
+}
+
+.content {
+    display: none;
+}
+
+#home:checked ~ #home-section,
+#skills:checked ~ #skills-section,
+#experience:checked ~ #experience-section,
+#education:checked ~ #education-section {
+    display: block;
+}
+
+/* Home section styling */
+h1 {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 20px auto;
+    width: 50%;
+    height: 2px;
+    background-color: #333;
+    border: none;
+}

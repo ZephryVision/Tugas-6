@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2304141 Tengku Fajar CV {% block title%}{% endblock %}</title> {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="about">
+        <!-- Radio buttons for navigation -->
+        <a
+        href="{% url 'home' %}"
+        class="p"
+        style="text-decoration: none; color: #2e5761"
+        >Home <span style="color: black">|</span></a>
+
+      <a
+        href="{% url 'Educations' %}"
+        class="p"
+        style="text-decoration: none; color: #295aab"
+        >Educations <span style="color: black">|</span></a
+      >
+      <a
+        href="{% url 'Skills' %}"
+        class="k"
+        style="text-decoration: none; color: #2e5761"
+        >Skilss <span style="color: black">|</span></a
+      >
+      <a
+        href="{% url 'Experiences' %}"
+        class="o"
+        style="text-decoration: none; color: #295aab"
+        >Experiencess <span style="color: black">|</span></a
+      >
+      <a
+        href="{% url 'expertise' %}"
+        class="e"
+        style="text-decoration: none; color: #2e5761"
+        >Keahlian</a
+      >
+    </div>
+        <!-- Home Section with Summary -->
+        <div class="content" id="home-section">
+            <img src="profil.png" alt="Profile Picture" class="profile-pic">
+            <h1>TENGKU FAJAR RAHMADANI ADHA SYAHPUTRA</h1>
+            <p>WA: <a href="https://shorturl.at/ZqW0x" class="contact-link" target="_blank">https://shorturl.at/ZqW0x</a></p>
+            
+            <div class="summary">
+                <h2>Summary</h2>
+                <p>A Computer Science Education student at the Pendidikan Indonesia University with a strong interest in the world of computers. Passionate about learning, collaborating, and improving skills in the field of technology. At least, that's what I thought at the beginning of my college (I am cooked💀).</p>
+            </div>
+
+            <div class="buttons">
+                <label for="skills" class="animated-button">Skills</label>
+                <label for="experience" class="animated-button">Experiences</label>
+                <label for="education" class="animated-button">Education</label>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="content" id="skills-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Data Entry</li>
+                <li>Pre-Entry Level Programming</li>
+                <li>Learning new skills for Industry Opportunities</li>
+                <li>Not burden to society (optional)</li>
+            </ul>
+            <label for="home" class="back-button">Home</label>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="content" id="experience-section">
+            <h2>Experiences</h2>
+            <ul>
+                <li>E-Modules Development (11/2023 to 01/2024)</li>
+                <li>Writing Academic Paper (09/2023 to Now)</li>
+            </ul>
+            <label for="home" class="back-button">Home</label>
+        </div>
+
+        <!-- Education Section -->
+        <div class="content" id="education-section">
+            <h2>Education</h2>
+            <ul>
+                <li>Madrasah Aliyah Negeri 1 Banda Aceh (2020 to 2023)</li>
+                <li>Universitas Pendidikan Indonesia (2023 to 2027)</li>
+            </ul>
+            <label for="home" class="back-button">Home</label>
+        </div>
+    </div>
+</body>
+</html>
